@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSDemo</title>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+
+    <script>
+      document.write("<h2 style = 'color:red'>Learning JavaScript </h2>");
+      //Using Var: we can redeclare the variable but cannot re assigned
+      function varExample() {
+        var name = "Alice";
+        console.log("Inside function, name:", name); // Output: Alice
+        if (true) {
+          var name = "Bob";
+          console.log("Inside if block, name:", name); // Output: Bob
+        }
+        console.log("Outside if block, name:", name); // Output: Bob
+      }
+      varExample();
+
+      // Using let: we cannot re-declare
+      function letExample() {
+        let age = 25;
+        console.log("Inside function, age:", age); // Output: 25
+        if (true) {
+          let age = 30;
+          console.log("Inside if block, age:", age); // Output: 30
+        }
+        console.log("Outside if block, age:", age); // Output: 25
+      }
+      letExample();
+
+      // Using const: cannot be redeclare and reassigned, even same value cannot be re assigned.
+      function constExample() {
+        const country = "India";
+        console.log("Country:", country); // Output: India
+
+        // Attempting to reassign const variable will throw an error
+        // country = "USA"; // Uncommenting this will cause an error
+      }
+      constExample();
+    </script>
+  </body>
+</html>
