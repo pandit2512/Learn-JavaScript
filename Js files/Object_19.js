@@ -1,4 +1,4 @@
-//Create an empty object
+//Create an empty object using literal
 let obj = {};
 console.log(typeof obj);
 //==================
@@ -42,8 +42,8 @@ const jobseek = {
   empAge: 25,
   details: function () {
     console.log("Details are: ", this.empId, this.empName, this.empAge);
-  //here this refers to current object
-  }
+    //here this refers to current object
+  },
 };
 
 jobseek.details();
