@@ -1,3 +1,10 @@
+//Object Creation using new keyword
+const s1 = new Student();
+s1.id = 101;
+s1.name = "Amit";
+
+//Above method reduces the readability object hence pre
+//using below method
 //Create an empty object using literal
 let obj = {};
 console.log(typeof obj);
