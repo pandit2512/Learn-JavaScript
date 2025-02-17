@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      form {
+        display: inline-block;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        background: #f9f9f9;
+      }
+
+      input {
+        padding: 8px;
+        margin: 10px 0;
+        width: 80%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background: linear-gradient(45deg, #007bff, #00d4ff);
+        border: none;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: linear-gradient(45deg, #0056b3, #0092cc);
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Assignment:1 -->
+    <button
+      onclick="displayDate()"
+      style="background-color: cadetblue; padding: 10px; border-radius: 8px"
+    >
+      Show Date & Time
+    </button>
+    <p id="dateDisplay"></p>
+
+    <br />
+    <!-- ===========Assignment:2========== -->
+
+    <form onsubmit="getNames(event)">
+      <h2>Enter Your Details</h2>
+      First Name: <input type="text" id="firstName" required /><br />
+      Last Name: <input type="text" id="lastName" required /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./Js files/Assignmen_34.js"></script>
+  </body>
+</html>
