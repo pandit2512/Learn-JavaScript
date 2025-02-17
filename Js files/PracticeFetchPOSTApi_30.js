@@ -18,4 +18,33 @@ fetch("http://localhost:8080/products", {
     "Content-Type": "application/json",
   },
   body: JSON.stringify(product),
-});
+})
+  .then((data) => data.json())
+  .then((data) => {
+    console.log(data);
+  });
+
+//==========================
+//Q.2
+
+const user = {
+  firstName: "Emily",
+  lastName: "Patni",
+  phoneNumber: 9075234890,
+  age: 24,
+  password: "User@1235",
+  confirmPassword: "User@1235",
+  email: "amily12@gmail.com",
+};
+
+fetch("http://localhost:8080/users", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(user),
+})
+  .then((data) => data.json())
+  .then((data) => {
+    console.log(data);
+  });
+
+//form create=>Object Store==> after clicking on button your Object should be Added
